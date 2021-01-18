@@ -4,10 +4,15 @@ from selenium.webdriver.common.by import By
 import time
 from os import system, name
 from colorama import Fore, Back, Style
+from tqdm import tqdm 
+for i in tqdm (range (101),  
+               desc=Fore.RED + "",  
+               ascii=False, ncols=100): 
+    time.sleep(0.01) 
 def clear():
         _ = system('cls')
+clear()
 print(Fore.RED + '''
-
 ████████╗██╗██╗  ██╗████████╗ ██████╗ ██╗  ██╗    ██╗   ██╗██╗███████╗██╗    ██╗    ██████╗  ██████╗ ████████╗
 ╚══██╔══╝██║██║ ██╔╝╚══██╔══╝██╔═══██╗██║ ██╔╝    ██║   ██║██║██╔════╝██║    ██║    ██╔══██╗██╔═══██╗╚══██╔══╝
    ██║   ██║█████╔╝    ██║   ██║   ██║█████╔╝     ██║   ██║██║█████╗  ██║ █╗ ██║    ██████╔╝██║   ██║   ██║   
